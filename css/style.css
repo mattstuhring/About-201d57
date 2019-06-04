@@ -1,0 +1,17 @@
+#jupiter {
+  background-color: orange;
+}
+
+.mars {
+  background-color: red;
+}
+
+h1 {
+  color: magenta;
+  border: yellow 7px solid;
+  border-radius: 20px;
+}
+
+p {
+  color: chartreuse;
+}
