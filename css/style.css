@@ -1,17 +1,39 @@
-#jupiter {
-  background-color: orange;
+body {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  background-image: url("../img/spheres.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: black;
 }
 
-.mars {
-  background-color: red;
+header {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  position: relative;
+  bottom: 8px;
+  right: 8px;
+  width: 100%;
 }
 
-h1 {
-  color: magenta;
-  border: yellow 7px solid;
-  border-radius: 20px;
+main h1 {
+  margin-top: 70px;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 100px;
 }
 
-p {
-  color: chartreuse;
+footer {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer span {
+  font-family: 'Pacifico', cursive;
 }
