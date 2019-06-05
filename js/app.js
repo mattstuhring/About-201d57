@@ -1,24 +1,26 @@
 'use strict';
 
+// Introduction message to the user
 alert('Welcome to a guessing game about me.  Hi my name is Matt.  I have provided some yes or no questions in hopes that you get to know me better.  Let\'s get started!');
 
-// user question - Color?
-var aboutColor = prompt('Am I a native Seattlite?').toLowerCase();
+// user question - Seattle?
+var aboutSeattle = prompt('Am I a native Seattlite?').toLowerCase();
 
-console.log('aboutColor: ', aboutColor);
+// log user response to the console
+console.log('aboutSeattle: ', aboutSeattle);
 
-if (aboutColor === 'yes' || aboutColor === 'y') {
+if (aboutSeattle === 'yes' || aboutSeattle === 'y') {
   alert('Correct!  I would call Kirkland my hometown which is located on the eastside of Lake Washington.');
-} else if (aboutColor === 'no' || aboutColor === 'n') {
+} else if (aboutSeattle === 'no' || aboutSeattle === 'n') {
   alert('Incorrect.  It is becoming rare to me a true Seattlite.');
 } else {
   alert('Remember to answer with a yes or no.');
 }
 
-
 // user question - Soccer?
 var aboutSport = prompt('Do I play soccer?').toLowerCase();
 
+// log user response to the console
 console.log('aboutSport: ', aboutSport);
 
 if (aboutSport === 'yes' || aboutSport === 'y') {
@@ -32,6 +34,7 @@ if (aboutSport === 'yes' || aboutSport === 'y') {
 // user question - Australia?
 var aboutLocation = prompt('Have I been to Australia?').toLowerCase();
 
+// log user response to the console
 console.log('aboutLocation: ', aboutLocation);
 
 if (aboutLocation === 'yes' || aboutLocation === 'y') {
@@ -45,6 +48,7 @@ if (aboutLocation === 'yes' || aboutLocation === 'y') {
 // user question - Code?
 var aboutCode = prompt('Do I have a background in JavaScript?').toLowerCase();
 
+// log user response to the console
 console.log('aboutCode: ', aboutCode);
 
 if (aboutCode === 'yes' || aboutCode === 'y') {
@@ -58,6 +62,7 @@ if (aboutCode === 'yes' || aboutCode === 'y') {
 // user question - Tattoo?
 var aboutTattoo = prompt('Am I the type of person who would have tattoos?').toLowerCase();
 
+// log user response to the console
 console.log('aboutTattoo: ', aboutTattoo);
 
 if (aboutTattoo === 'yes' || aboutTattoo === 'y') {
