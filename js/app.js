@@ -1,72 +1,69 @@
 'use strict';
 
-// user question - Color?
-var aboutColor = prompt('Is your favorite color #201d57?');
+alert('Welcome to a guessing game about me.  Hi my name is Matt.  I have provided some yes or no questions in hopes that you get to know me better.  Let\'s get started!');
 
-aboutColor = aboutColor.toLowerCase();
+// user question - Color?
+var aboutColor = prompt('Am I a native Seattlite?').toLowerCase();
+
 console.log('aboutColor: ', aboutColor);
 
 if (aboutColor === 'yes' || aboutColor === 'y') {
-  alert('I just learned something new about you!');
+  alert('Correct!  I would call Kirkland my hometown which is located on the eastside of Lake Washington.');
 } else if (aboutColor === 'no' || aboutColor === 'n') {
-  alert('Yeah me too, not really my style.  I like the color #98ffcc.');
+  alert('Incorrect.  It is becoming rare to me a true Seattlite.');
 } else {
-  alert('Maybe you made a mistake.  Next time answer with a Yes or No.');
+  alert('Remember to answer with a yes or no.');
 }
 
 
 // user question - Soccer?
-var aboutSport = prompt('Do you like soccer?');
+var aboutSport = prompt('Do I play soccer?').toLowerCase();
 
-aboutSport = aboutSport.toLowerCase();
 console.log('aboutSport: ', aboutSport);
 
 if (aboutSport === 'yes' || aboutSport === 'y') {
-  alert('Dang me too!  We should kick the ball around sometime.');
+  alert('Correct!  I\'m always down to kick the soccer ball around. . . unless I got some nice kicks on.');
 } else if (aboutSport === 'no' || aboutSport === 'n') {
-  alert('Yeah I get it.  It is not everyone\'s sport.');
+  alert('Incorrect.  I still play every Thursday.');
 } else {
-  alert('Not cool!  I would be cooler if you at least tried!  Next time please answer with a Yes or No.');
+  alert('Remember to answer with a yes or no.');
 }
 
 // user question - Australia?
-var aboutLocation = prompt('Have you ever been to Australia?');
+var aboutLocation = prompt('Have I been to Australia?').toLowerCase();
 
-aboutLocation = aboutLocation.toLowerCase();
 console.log('aboutLocation: ', aboutLocation);
 
 if (aboutLocation === 'yes' || aboutLocation === 'y') {
-  alert('Good day mate!  Australia is an epic place.  I got to hold a koala when I was there.');
+  alert('Correct!  Australia is an epic place.  I got to hold a koala when I was there.');
 } else if (aboutLocation === 'no' || aboutLocation === 'n') {
-  alert('You should definitely go.  Long flight but well worth it.');
+  alert('Incorrect.  The flight is long but so worth it.');
 } else {
-  alert('You should know the drill already.  I know you will do better next round.');
+  alert('Remember to answer with a yes or no.');
 }
 
 // user question - Code?
-var aboutCode = prompt('Do you like to code with JavaScript?');
+var aboutCode = prompt('Do I have a background in JavaScript?').toLowerCase();
 
-aboutCode = aboutCode.toLowerCase();
 console.log('aboutCode: ', aboutCode);
 
 if (aboutCode === 'yes' || aboutCode === 'y') {
-  alert('That is the correct answer!  Here is a cookie.');
+  alert('Correct!  JavaScript is my jam!');
 } else if (aboutCode === 'no' || aboutCode === 'n') {
-  alert('Well we got the next couple of weeks to change that opinion.');
+  alert('Incorrect.  I actually went to school at Galvanize in Seattle where I learned JavaScript.');
 } else {
-  alert('Dude I would really like a Yes or No next time.  All good though.');
+  alert('Remember to answer with a yes or no.');
 }
 
 // user question - Tattoo?
-var aboutTattoo = prompt('Would you ever get a tattoo?');
+var aboutTattoo = prompt('Am I the type of person who would have tattoos?').toLowerCase();
 
-aboutTattoo = aboutTattoo.toLowerCase();
 console.log('aboutTattoo: ', aboutTattoo);
 
 if (aboutTattoo === 'yes' || aboutTattoo === 'y') {
-  alert('Nice!  I got a collection of tattoos started but I always need more.');
+  alert('Correct!  I got a collection of tattoos started but I always need more.');
 } else if (aboutTattoo === 'no' || aboutTattoo === 'n') {
-  alert('Yeah tattoos are a big decision.  They are definitely not for everyone.');
+  alert('Incorrect.  To your surprise I actually have many tatoos.');
 } else {
-  alert('Dude. . . Seriously all you got to do is answer with a Yes or No.');
+  alert('Remember to answer with a yes or no.');
 }
