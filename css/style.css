@@ -1,37 +1,56 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Permanent Marker', cursive; */
+
 body {
-  text-align: center;
-  font-family: Helvetica, sans-serif;
-  background-image: url("../img/spheres.jpg");
+  font-family: 'Roboto', sans-serif;
+  background-image: url("../img/paper.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-color: black;
+  background-color: white;
 }
 
 header {
-  padding: 20px;
+  padding: 15px;
   background-color: black;
   color: white;
-  position: relative;
-  bottom: 8px;
-  right: 8px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
   width: 100%;
+  text-align: center;
 }
 
 main h1 {
-  margin-top: 70px;
+  margin-top: 60px;
   font-family: 'Bungee Shade', cursive;
-  font-size: 100px;
+  font-size: 80px;
+  text-align: center;
+}
+
+section {
+  margin-left: 30%;
+}
+
+section.section-top-ten {
+  margin-bottom: 60px;
+}
+
+
+section.section-score {
+  margin-bottom: 115px;
 }
 
 footer {
-  padding: 20px;
+  padding: 15px;
   background-color: black;
   color: white;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+  text-align: center;
 }
 
 footer span {

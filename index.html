@@ -1,17 +1,105 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lab 02</title>
+    <title>Lab 03</title>
     <link href="./css/style.css" type="text/css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Pacifico&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Pacifico|Permanent+Marker|Roboto&display=swap" rel="stylesheet"> 
   </head>
   <body>
-    <header>Lab 02: About Me, with a guessing game</header>
+    <!-- Header -->
+    <header>Lab 03: <span>Extends About Me & Guessing Game</span></header>
 
+    <!-- Title -->
     <main>
-      <h1>Class 2 Lab</h1>
+      <h1>Class 3 Lab</h1>
     </main>
 
+    <!-- Top Ten ... -->
+    <section class="section-top-ten">
+      <h2>Top Ten - Countries I want to visit</h2>
+
+      <ol>
+        <li>Spain</li>
+        <li>England</li>
+        <li>Germany</li>
+        <li>French Polynesia</li>
+        <li>Greece</li>
+        <li>Portugal</li>
+        <li>Brazil</li>
+        <li>Thailand</li>
+        <li>Japan</li>
+        <li>Switzerland</li>
+      </ol>
+    </section>
+
+    <!-- Guessing Games -->
+    <section class="section-games">
+      <h2>Guessing Game - Were you correct?</h2>
+      <ol>
+        <!-- Seattlite? -->
+        <li class="seattle">Am I a native Seattlite?
+          <ul>
+            <li>Response: ?</li>
+            <li>Answer: Yes</li>
+          </ul>
+        </li>
+
+        <!-- Soccer? -->
+        <li class="soccer">Do I play soccer?
+          <ul>
+            <li>Response: ?</li>
+            <li>Answer: Yes</li>
+          </ul>
+        </li>
+
+        <!-- Australia -->
+        <li class="australia">Have I been to Australia?
+          <ul>
+            <li>Response: ?</li>
+            <li>Answer: Yes</li>
+          </ul>
+        </li>
+
+        <!-- JavaScript -->
+        <li class="javascript">Do I have a background in JavaScript?
+          <ul>
+            <li>Response: ?</li>
+            <li>Answer: Yes</li>
+          </ul>
+        </li>
+
+        <!-- Tattoos? -->
+        <li class="tattoos">Am I the type of person who would have tattoos?
+          <ul>
+            <li>Response: ?</li>
+            <li>Answer: Yes</li>
+          </ul>
+        </li>
+        
+        <!-- Guess the number question -->
+        <li class="numbers">Guess the number that I am thinking of?
+          <ul>
+            <li>Response: ?</li>
+            <li>Answer: ?</li>
+          </ul>
+        </li>
+
+        <!-- Multiple answer question -->
+        <li class="languages">What coding languages have I worked with prior to starting CodeFellows?
+          <ul>
+            <li>Response: ?</li>
+            <li>Answer: HTML, CSS, JavaScript</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section-score">
+      <!-- Display user score -->
+      <p>You got ? out of ? correct!</p>
+    </section>
+
+    <!-- Footer -->
     <footer>Created by: <span>Matt Stuhring</span></footer>
 
     <script src="./js/app.js"></script>
