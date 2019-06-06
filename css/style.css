@@ -1,6 +1,7 @@
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Pacifico', cursive;
-font-family: 'Permanent Marker', cursive; */
+/* GOOGLE FONTS */
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Pacifico', cursive; */
+/* font-family: 'Permanent Marker', cursive; */
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -30,16 +31,57 @@ main h1 {
 }
 
 section {
-  margin-left: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Permanent Marker', cursive;
 }
 
-section.section-top-ten {
+section h2, section h3, section p {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 45px;
+  margin-bottom: 0px;
+  border-bottom: 4px solid black;
+}
+
+section h3 {
+  margin-top: 5px;
+}
+
+section.section-top-ten ol {
+  padding-inline-start: 32%;
+  font-size: 22px;
+}
+
+section.section-top-ten, section.section-games {
   margin-bottom: 60px;
+  width: 400px;
 }
 
+section.section-games ol {
+  padding-inline-start: 19%;
+  font-size: 22px;
+}
+
+section.section-games ol li:nth-child(1) {
+  margin-top: 5px;
+}
+
+section.section-games ol li:nth-child(2) {
+  margin-bottom: 15px;
+}
+
+section.section-games ul li {
+  list-style-type: none;
+  font-size: 18px;
+}
 
 section.section-score {
   margin-bottom: 115px;
+  font-size: 32px;
 }
 
 footer {

@@ -11,7 +11,7 @@ alert('Do you want to play a guessing game?  Too bad this is happening.  Hi my n
 // Save the users first name
 userName = prompt('Cool!  First things first what is your first name?');
 
-// If user hits canel set default name to 'User'
+// If user hits cancel set default name to 'User'
 if (userName === null) {
   userName = 'User';
 }
