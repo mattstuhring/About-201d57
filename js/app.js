@@ -37,6 +37,7 @@ var aboutSeattleFunc = function(){
   // log user response to the console for debugging
   console.log('aboutSeattle: ', aboutSeattle);
 
+  // Check the users answer
   if (aboutSeattle === 'yes' || aboutSeattle === 'y') {
     alert('Correct!  I would call Kirkland my hometown which is located on the eastside of Lake Washington.');
     userCorrectAnswers++; // increment correct answer
@@ -64,6 +65,7 @@ var aboutSportFunc = function(){
   // log user response to the console for debugging
   console.log('aboutSport: ', aboutSport);
 
+  // Check the users answer
   if (aboutSport === 'yes' || aboutSport === 'y') {
     alert('Correct!  I\'m always down to kick the soccer ball around. . . unless I got some nice kicks on.');
     userCorrectAnswers++; // increment correct answer
@@ -92,6 +94,7 @@ var aboutLocationFunc = function(){
   // log user response to the console for debugging
   console.log('aboutLocation: ', aboutLocation);
 
+  // Check the users answer
   if (aboutLocation === 'yes' || aboutLocation === 'y') {
     alert('Correct!  Australia is an epic place.  I got to hold a koala when I was there.');
     userCorrectAnswers++;// increment correct answer
@@ -110,10 +113,10 @@ var aboutLocationFunc = function(){
 // ---------------------------------------------------------------------------
 var aboutCodeFunc = function(){
   // Save the user's response
-  var aboutCode = prompt('Do I have a background in JavaScript?').toLowerCase();
+  var aboutCode = prompt('Do I have a background in Java?').toLowerCase();
 
   // Insert user response into the DOM
-  document.querySelector('section.section-games li.javascript li:nth-child(1)').innerHTML = 'Response: ' + aboutCode;
+  document.querySelector('section.section-games li.java li:nth-child(1)').innerHTML = 'Response: ' + aboutCode;
 
   // Increment number of questions
   numberOfQuestions++;
@@ -121,12 +124,13 @@ var aboutCodeFunc = function(){
   // log user response to the console for debugging
   console.log('aboutCode: ', aboutCode);
 
+  // Check the users answer
   if (aboutCode === 'yes' || aboutCode === 'y') {
-    alert('Correct!  JavaScript is my jam!');
+    alert('Incorrect.  Java is new to me.');
     userCorrectAnswers++; // increment correct answer
 
   } else if (aboutCode === 'no' || aboutCode === 'n') {
-    alert('Incorrect.  I actually went to school at Galvanize in Seattle where I learned JavaScript.');
+    alert('Correct!  I am ready to learn.');
 
   } else {
     alert('Remember to answer with a yes or no.');
@@ -149,6 +153,7 @@ var aboutTattooFunc = function(){
   // log user response to the console for debugging
   console.log('aboutTattoo: ', aboutTattoo);
 
+  // Check the users answer
   if (aboutTattoo === 'yes' || aboutTattoo === 'y') {
     alert('Correct!  I got a collection of tattoos started but I always need more.');
     userCorrectAnswers++; // increment correct answer
@@ -238,7 +243,7 @@ var myCodingLanguagesFunc = function(){
   var userCorrectLanguageAnswers = 0;
   var userLanguagesGuessArray = [];
 
-  // Begin the 7 user attempts
+  // Begin the 6 user attempts
   for (var i = 6; i >= 0; i--) {
 
     // if the user has answered 3 then they are correct
@@ -274,16 +279,6 @@ var myCodingLanguagesFunc = function(){
         myCodingLanguages.splice(j, 1); // remove that element from myCodingLanguages array
         alert('Nice work!  I have previous experience working with ' + userLanguageGuess + '.');
 
-        // EXTRA - remove coding language from the available choices provided to the user
-        for (var k = 0; k < codingLanguages.length; k++) {
-          var lowerCaseLanguage = codingLanguages[k].toLowerCase();
-
-          if (lowerCaseLanguage === myLowerCaseLanguage) {
-            codingLanguages.splice(k, 1);
-            break;
-          }
-        }
-
         break;
       }
 
@@ -292,13 +287,25 @@ var myCodingLanguagesFunc = function(){
         alert('Incorrect.  Let\'s try again.');
       }
     }
+
+    // EXTRA - remove coding language from the available choices that are provided to the user
+    for (var k = 0; k < codingLanguages.length; k++) {
+      var lowerCaseLanguage = codingLanguages[k].toLowerCase();
+
+      if (lowerCaseLanguage === userLanguageGuess) {
+        codingLanguages.splice(k, 1);
+        break;
+      }
+    }
   }
 
   // Insert user response into the DOM
   document.querySelector('section.section-games li.languages li:nth-child(1)').innerHTML = 'Response: ' + userLanguagesGuessArray.join(', ');
 };
 
-//Call all question function
+// ---------------------------------------------------------------------------
+// Let's call the question functions!!!
+// ---------------------------------------------------------------------------
 aboutSeattleFunc();
 aboutSportFunc();
 aboutLocationFunc();
