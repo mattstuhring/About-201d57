@@ -210,8 +210,10 @@ var numberOfQuestionsFunc = function(){
       // Check if number is too high or too low
       if (userNumberGuess > randomNumber) {
         alert('Too high!  You have ' + numberAttempts + ' attempt(s) left.');
+      } else if (userNumberGuess > randomNumber) {
+        alert('Too low!  You have ' + numberAttempts + ' attempt(s) left.');
       } else {
-        alert('Too low!.  You have ' + numberAttempts + ' attempt(s) left.');
+        alert('Please input only valid numbers between 1 & 10');
       }
 
     } else {
@@ -237,7 +239,7 @@ var myCodingLanguagesFunc = function(){
   // Increment number of questions
   numberOfQuestions++;
 
-  // Setup languages
+  // Setup variables
   var myCodingLanguages = ['html', 'css', 'javascript'];
   var codingLanguages = ['SQL', 'HTML', 'CSS', 'Java', 'Python', 'JavaScript', 'C#', 'C++', 'PHP'];
   var userCorrectLanguageAnswers = 0;
