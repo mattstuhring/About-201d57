@@ -54,7 +54,7 @@ var aboutSeattleFunc = function(){
 
 var aboutSportFunc = function(){
   // Save the user's response
-  var aboutSport = prompt('Do I play soccer?').toLowerCase();
+  var aboutSport = prompt('Do I play football?').toLowerCase();
 
   // Insert user response into the DOM
   document.querySelector('section.section-games li.soccer li:nth-child(1)').innerHTML = 'Response: ' + aboutSport;
@@ -67,11 +67,11 @@ var aboutSportFunc = function(){
 
   // Check the users answer
   if (aboutSport === 'yes' || aboutSport === 'y') {
-    alert('Correct!  I\'m always down to kick the soccer ball around. . . unless I got some nice kicks on.');
+    alert('Incorrect.  Soccer for life!');
     userCorrectAnswers++; // increment correct answer
 
   } else if (aboutSport === 'no' || aboutSport === 'n') {
-    alert('Incorrect.  I still play every Thursday.');
+    alert('Correct.  Goal!!!!!!!!!!!');
 
   } else {
     alert('Remember to answer with a yes or no.');

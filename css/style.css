@@ -3,6 +3,10 @@
 /* font-family: 'Pacifico', cursive; */
 /* font-family: 'Permanent Marker', cursive; */
 
+* {
+  outline: 1px solid green;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-image: url("../img/paper.jpg");
@@ -21,13 +25,29 @@ header {
   right: 0px;
   width: 100%;
   text-align: center;
+  z-index: 2;
 }
 
-main h1 {
-  margin-top: 60px;
-  font-family: 'Bungee Shade', cursive;
-  font-size: 80px;
+main div.profile-pic {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  margin-bottom: 60px;
+}
+
+main div.profile-pic img {
+  border-radius: 50%;
+  box-shadow: 10px 10px 5px grey;
+  width: 400px;
+}
+
+main div.introduction h2 {
+  margin-top: 70px;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 section {
@@ -42,13 +62,16 @@ section h2, section h3, section p {
 }
 
 section h2 {
-  font-size: 45px;
+  font-size: 75px;
+  margin-top: 0px;
   margin-bottom: 0px;
   border-bottom: 4px solid black;
 }
 
 section h3 {
+  font-size: 35px;
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 section.section-top-ten ol {
@@ -58,7 +81,7 @@ section.section-top-ten ol {
 
 section.section-top-ten, section.section-games {
   margin-bottom: 60px;
-  width: 400px;
+  width: 600px;
 }
 
 section.section-games ol {
