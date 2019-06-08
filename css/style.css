@@ -27,7 +27,11 @@ a {
   -moz-transition: all 1s;
 }
 
-a:hover, a:focus {
+a:visited {
+  color: #129CF3;
+}
+
+a:hover {
   color: #8be0b9;
   transition: all 1s;
   -webkit-transition: all 1s;
