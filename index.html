@@ -2,26 +2,47 @@
 <html>
   <head>
     <title>Lab 03</title>
-    <link href="./css/style.css" type="text/css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Pacifico|Permanent+Marker|Roboto&display=swap" rel="stylesheet"> 
-  </head>
-  <body>
-    <!-- Header -->
-    <header>Lab 03: <span>About Me</span></header>
 
-    <!-- Title -->
+    <!-- CSS Style -->
+    <link href="./css/style.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Raleway+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Pacifico|Permanent+Marker|Roboto&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <!-- Navigation -->
+      <nav>
+        <!-- Link to Lab 02 Github repo -->
+        <span class="about-me">
+          <a href="https://github.com/mattstuhring/about-me-201" target="_blank">About Me</a>
+        </span>
+
+        <!-- Links to my resources -->
+        <span class="resources">
+          <a href="https://www.mattstuhring.com" target="_blank">Portfolio</a>
+          <a href="https://www.linkedin.com/in/mattstuhring/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/mattstuhring" target="_blank">Github</a>
+        </span>
+      </nav>
+    </header>
+
     <main>
+      <!-- Introduction -->
       <div class="introduction">
         <h2>Hello<br>I'm Matt</h2>
       </div>
 
+      <!-- Profile Pic -->
       <div class="profile-pic">
         <img src="./img/matt.jpg" alt="Picture of Matt">
       </div>
     </main>
 
     <!-- Top Ten ... -->
-    <section class="section-top-ten">
+    <section class="top-ten">
       <h2>Top Ten</h2>
       <h3>Countries I want to visit!</h3>
       <ol>
@@ -39,11 +60,12 @@
     </section>
 
     <!-- Guessing Games -->
-    <section class="section-games">
+    <section class="games">
       <h2>Guessing Game</h2>
       <ol>
         <!-- Seattlite? -->
-        <li class="seattle">Am I a native Seattlite?
+        <li class="seattle">
+          <span>Am I a native Seattlite?</span>
           <ul>
             <li>Response: ?</li>
             <li>Answer: Yes</li>
@@ -51,7 +73,8 @@
         </li>
 
         <!-- Soccer? -->
-        <li class="soccer">Do I play soccer?
+        <li class="soccer">
+          <span>Do I play football?</span>
           <ul>
             <li>Response: ?</li>
             <li>Answer: Yes</li>
@@ -59,7 +82,8 @@
         </li>
 
         <!-- Australia? -->
-        <li class="australia">Have I been to Australia?
+        <li class="australia">
+          <span>Have I been to Australia?</span>
           <ul>
             <li>Response: ?</li>
             <li>Answer: Yes</li>
@@ -67,7 +91,8 @@
         </li>
 
         <!-- JavaScript? -->
-        <li class="java">Do I have a background in Java?
+        <li class="java">
+          <span>Do I have a background in Java?</span>
           <ul>
             <li>Response: ?</li>
             <li>Answer: Yes</li>
@@ -75,15 +100,17 @@
         </li>
 
         <!-- Tattoos? -->
-        <li class="tattoos">Am I the type of person who would have tattoos?
+        <li class="tattoos">
+          <span>Am I the type of person who would have tattoos?</span>
           <ul>
             <li>Response: ?</li>
             <li>Answer: Yes</li>
           </ul>
         </li>
-        
+
         <!-- Guess the number question -->
-        <li class="numbers">Guess the number that I am thinking of?
+        <li class="numbers">
+          <span>Guess the number that I am thinking of?</span>
           <ul>
             <li>Response: ?</li>
             <li>Answer: ?</li>
@@ -91,7 +118,8 @@
         </li>
 
         <!-- Multiple answer question -->
-        <li class="languages">What coding languages have I worked with prior to starting CodeFellows?
+        <li class="languages">
+          <span>What coding languages have I worked with prior to starting CodeFellows?</span>
           <ul>
             <li>Response: ?</li>
             <li>Answer: HTML, CSS, JavaScript</li>
@@ -101,13 +129,20 @@
     </section>
 
     <!-- Display user score -->
-    <section class="section-score">
+    <section class="score">
       <p>You got ? out of ? correct!</p>
     </section>
 
     <!-- Footer -->
-    <footer>Created by: <span>Matt Stuhring</span></footer>
+    <footer>
+      <span class="date">Created 2019 - </span>
+      <span>
+        <!-- Link to Github repo -->
+        <a href="https://github.com/mattstuhring" target="_blank">Matt Stuhring</a>
+      </span>
+    </footer>
 
-    <!-- <script src="./js/app.js"></script> -->
+    <!-- JS Files -->
+    <script src="./js/app.js"></script>
   </body>
 </html>
