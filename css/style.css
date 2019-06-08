@@ -1,5 +1,16 @@
-body {
+/*
+  Google Fonts
+  -------------
+  font-family: 'Raleway Dots', cursive;
+  font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
+  font-family: 'Bungee Shade', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Pacifico', cursive;
+*/
+
+body {
+  font-family: 'Raleway', sans-serif;
   background-image: url("../img/paper.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -7,16 +18,50 @@ body {
   background-color: white;
 }
 
+a {
+  color: #129CF3;
+  text-decoration: none;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  -moz-transition: all 1s;
+}
+
+a:hover, a:focus {
+  color: #8be0b9;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  -moz-transition: all 1s;
+}
+
 header {
-  padding: 15px;
   background-color: black;
   color: white;
   position: fixed;
   top: 0px;
   right: 0px;
   width: 100%;
-  text-align: center;
   z-index: 2;
+}
+
+header nav span.about-me a {
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  margin-left: 75px;
+}
+
+header nav span.resources a {
+  margin-left: 15px;
+  margin-right: 15px;
+  float: right;
+  position: relative;
+  top: 17px;
+  font-size: 17px;
+}
+
+header nav span.resources a:nth-child(1) {
+  margin-right: 75px;
 }
 
 main div.profile-pic {
@@ -65,35 +110,35 @@ section h3 {
   margin-bottom: 5px;
 }
 
-section.section-top-ten ol {
+section.top-ten ol {
   padding-inline-start: 32%;
   font-size: 22px;
 }
 
-section.section-top-ten, section.section-games {
+section.top-ten, section.games {
   margin-bottom: 60px;
   width: 600px;
 }
 
-section.section-games ol {
+section.games ol {
   padding-inline-start: 19%;
   font-size: 22px;
 }
 
-section.section-games ol li:nth-child(1) {
+section.games ol li:nth-child(1) {
   margin-top: 5px;
 }
 
-section.section-games ol li:nth-child(2) {
+section.games ol li:nth-child(2) {
   margin-bottom: 15px;
 }
 
-section.section-games ul li {
+section.games ul li {
   list-style-type: none;
   font-size: 18px;
 }
 
-section.section-score {
+section.score {
   margin-bottom: 115px;
   font-size: 32px;
 }
@@ -106,9 +151,14 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  text-align: center;
+  text-align: right;
 }
 
-footer span {
+footer span.date {
+  font-size: 10px;
+}
+
+footer span:nth-child(2) {
   font-family: 'Pacifico', cursive;
+  margin-right: 75px;
 }
