@@ -12,8 +12,8 @@ alert('Do you want to play a guessing game?  Too bad this is happening.  Hi my n
 userName = prompt('Cool!  First things first what is your first name?');
 
 // If user hits cancel set default name to 'User'
-if (userName === null) {
-  userName = 'User';
+if (!userName) {
+  userName = 'Player1';
 }
 
 // Message - Thank the user
@@ -29,7 +29,7 @@ var aboutSeattleFunc = function(){
   var aboutSeattle = prompt('Am I a native Seattlite?').toLowerCase();
 
   // Insert user response into the DOM
-  document.querySelector('section.section-games li.seattle li:nth-child(1)').innerHTML = 'Response: ' + aboutSeattle;
+  document.querySelector('section.games li.seattle li:nth-child(1)').innerHTML = 'Response: ' + aboutSeattle;
 
   // Increment number of questions
   numberOfQuestions++;
@@ -39,10 +39,10 @@ var aboutSeattleFunc = function(){
 
   // Check the users answer
   if (aboutSeattle === 'yes' || aboutSeattle === 'y') {
-    alert('Correct!  I would call Kirkland my hometown which is located on the eastside of Lake Washington.');
+    alert('Correct!  Kirkland is my hometown which is located on the eastside of Lake Washington.');
     userCorrectAnswers++; // increment correct answer
   } else if (aboutSeattle === 'no' || aboutSeattle === 'n') {
-    alert('Incorrect.  It is becoming rare to me a true Seattlite.');
+    alert('Incorrect.  It is becoming rare to me a true Seattlite like me.');
   } else {
     alert('Remember to answer with a yes or no.');
   }
@@ -57,7 +57,7 @@ var aboutSportFunc = function(){
   var aboutSport = prompt('Do I play football?').toLowerCase();
 
   // Insert user response into the DOM
-  document.querySelector('section.section-games li.soccer li:nth-child(1)').innerHTML = 'Response: ' + aboutSport;
+  document.querySelector('section.games li.soccer li:nth-child(1)').innerHTML = 'Response: ' + aboutSport;
 
   // Increment number of questions
   numberOfQuestions++;
@@ -67,11 +67,11 @@ var aboutSportFunc = function(){
 
   // Check the users answer
   if (aboutSport === 'yes' || aboutSport === 'y') {
-    alert('Incorrect.  Soccer for life!');
+    alert('Incorrect.  Soccer for life!  Goal!!!!!!!!!!!');
     userCorrectAnswers++; // increment correct answer
 
   } else if (aboutSport === 'no' || aboutSport === 'n') {
-    alert('Correct.  Goal!!!!!!!!!!!');
+    alert('Correct.  Footbal was never my sport.');
 
   } else {
     alert('Remember to answer with a yes or no.');
@@ -86,7 +86,7 @@ var aboutLocationFunc = function(){
   var aboutLocation = prompt('Have I been to Australia?').toLowerCase();
 
   // Insert user response into the DOM
-  document.querySelector('section.section-games li.australia li:nth-child(1)').innerHTML = 'Response: ' + aboutLocation;
+  document.querySelector('section.games li.australia li:nth-child(1)').innerHTML = 'Response: ' + aboutLocation;
 
   // Increment number of questions
   numberOfQuestions++;
@@ -116,7 +116,7 @@ var aboutCodeFunc = function(){
   var aboutCode = prompt('Do I have a background in Java?').toLowerCase();
 
   // Insert user response into the DOM
-  document.querySelector('section.section-games li.java li:nth-child(1)').innerHTML = 'Response: ' + aboutCode;
+  document.querySelector('section.games li.java li:nth-child(1)').innerHTML = 'Response: ' + aboutCode;
 
   // Increment number of questions
   numberOfQuestions++;
@@ -145,7 +145,7 @@ var aboutTattooFunc = function(){
   var aboutTattoo = prompt('Am I the type of person who would have tattoos?').toLowerCase();
 
   // Insert user response into the DOM
-  document.querySelector('section.section-games li.tattoos li:nth-child(1)').innerHTML = 'Response: ' + aboutTattoo;
+  document.querySelector('section.games li.tattoos li:nth-child(1)').innerHTML = 'Response: ' + aboutTattoo;
 
   // Increment number of questions
   numberOfQuestions++;
@@ -210,10 +210,8 @@ var numberOfQuestionsFunc = function(){
       // Check if number is too high or too low
       if (userNumberGuess > randomNumber) {
         alert('Too high!  You have ' + numberAttempts + ' attempt(s) left.');
-      } else if (userNumberGuess > randomNumber) {
-        alert('Too low!  You have ' + numberAttempts + ' attempt(s) left.');
       } else {
-        alert('Please input only valid numbers between 1 & 10');
+        alert('Too low!  You have ' + numberAttempts + ' attempt(s) left.');
       }
 
     } else {
@@ -225,8 +223,8 @@ var numberOfQuestionsFunc = function(){
   } while (numberAttempts >= 0);
 
   // Insert user response into the DOM
-  document.querySelector('section.section-games li.numbers li:nth-child(1)').innerHTML = 'Response: ' + userNumberGuessArray.join(', ');
-  document.querySelector('section.section-games li.numbers li:nth-child(2)').innerHTML = 'Answer: ' + randomNumber;
+  document.querySelector('section.games li.numbers li:nth-child(1)').innerHTML = 'Response: ' + userNumberGuessArray.join(', ');
+  document.querySelector('section.games li.numbers li:nth-child(2)').innerHTML = 'Answer: ' + randomNumber;
 };
 
 // ----------------------------------------------------------------------------------------
@@ -302,7 +300,7 @@ var myCodingLanguagesFunc = function(){
   }
 
   // Insert user response into the DOM
-  document.querySelector('section.section-games li.languages li:nth-child(1)').innerHTML = 'Response: ' + userLanguagesGuessArray.join(', ');
+  document.querySelector('section.games li.languages li:nth-child(1)').innerHTML = 'Response: ' + userLanguagesGuessArray.join(', ');
 };
 
 // ---------------------------------------------------------------------------
@@ -324,7 +322,7 @@ myCodingLanguagesFunc();
 var userMessageScore = 'You got ' + userCorrectAnswers + ' out of ' + numberOfQuestions + ' questions correct.  Nice work ' + userName + '!';
 
 // Insert user response into the DOM
-document.querySelector('section.section-score p').innerHTML = userMessageScore;
+document.querySelector('section.score p').innerHTML = userMessageScore;
 
 // Message - display personalized score
 alert(userMessageScore);
