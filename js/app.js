@@ -246,10 +246,10 @@ var myCodingLanguagesFunc = function(){
   // Begin the 6 user attempts
   for (var i = 6; i >= 0; i--) {
 
-    // if the user has answered 3 then they are correct
-    if (userCorrectLanguageAnswers === 3) {
+    // if the user has answered 1 then they are correct
+    if (userCorrectLanguageAnswers === 1) {
       userCorrectAnswers++;
-      alert('Wow you got 3 correct!  Well done!');
+      alert('Wow you got 1 correct!  Well done!');
       break;
     }
 
