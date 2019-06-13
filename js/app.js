@@ -249,13 +249,13 @@ var myCodingLanguagesFunc = function(){
     // if the user has answered 1 then they are correct
     if (userCorrectLanguageAnswers === 1) {
       userCorrectAnswers++;
-      alert('Wow you got 1 correct!  Well done!');
+      alert('Wow you got it correct!  I know JavaScript, CSS, and HTML.');
       break;
     }
 
     // if there are zero attempts - break!
     if (i === 0) {
-      alert('Sorry you have 0 attempts left.  Better luck next time.');
+      alert('Sorry you have 0 attempts left.  I know JavaScript, CSS, and HTML.');
       break;
     }
 
